@@ -1,0 +1,494 @@
+<!DOCTYPE html><html lang="he" dir="rtl"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>אודות ד״ר אביב גור - מומחה נוירולוגיה ומטפל מסור</title>
+  <meta name="description" content="הכירו את ד״ר אביב גור, מומחה נוירולוגיה עם התמחות בADHD ואוטיזם. ניסיון רב שנים, גישה אישית ומחויבות למצוינות רפואית.">
+  <meta name="keywords" content="ד״ר אביב גור, נוירולוג, ADHD, אוטיזם, adhd and autism">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<style>
+/* Zappy Attribution Header Styles */
+.zappy-header {
+  position: static;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 4px 19px 0px rgba(0,0,0,0.04);
+  padding: 16px 10px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 21px;
+}
+
+    .zappy-header p {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      white-space: nowrap;
+      display: inline-block;
+      vertical-align: baseline;
+      margin-bottom: 0 !important;
+    }
+
+.zappy-header .zappy-link {
+  font-weight: 700;
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.zappy-header .zappy-link:hover {
+  opacity: 0.7;
+}</style>
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+    <!-- Mickidum Accessibility Toolbar -->
+    <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+<!-- Zappy Analytics -->
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  var config = {
+    websiteId: '31be5407-5b04-4f56-b8e2-a75069610c47',
+    apiUrl: 'https://api.zappy5.com/api/analytics/track',
+    sessionDuration: 30 * 60 * 1000, // 30 minutes
+    visitorDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    trackPageViews: true,
+    trackClicks: true,
+    trackFormSubmissions: true
+  };
+  
+  // Generate or retrieve persistent visitor ID (30 days)
+  function getVisitorId() {
+    var visitorKey = 'zappy_visitor_' + config.websiteId;
+    var visitor = null;
+    
+    try {
+      visitor = localStorage.getItem(visitorKey);
+      if (visitor) {
+        var visitorData = JSON.parse(visitor);
+        var now = Date.now();
+        
+        // Check if visitor ID is still valid (30 days)
+        if (now - visitorData.created < config.visitorDuration) {
+          // Update last seen timestamp
+          visitorData.lastSeen = now;
+          localStorage.setItem(visitorKey, JSON.stringify(visitorData));
+          return visitorData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: LocalStorage not available');
+    }
+    
+    // Generate new visitor ID
+    var newVisitorId = 'zv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      localStorage.setItem(visitorKey, JSON.stringify({
+        id: newVisitorId,
+        created: Date.now(),
+        lastSeen: Date.now()
+      }));
+    } catch (e) {
+      // Continue without local storage
+    }
+    
+    return newVisitorId;
+  }
+  
+  // Generate or retrieve session ID (30 minutes)
+  function getSessionId() {
+    var sessionKey = 'zappy_session_' + config.websiteId;
+    var session = null;
+    
+    try {
+      session = sessionStorage.getItem(sessionKey);
+      if (session) {
+        var sessionData = JSON.parse(session);
+        var now = Date.now();
+        
+        // Check if session is still valid
+        if (now - sessionData.timestamp < config.sessionDuration) {
+          // Update timestamp
+          sessionData.timestamp = now;
+          sessionStorage.setItem(sessionKey, JSON.stringify(sessionData));
+          return sessionData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: SessionStorage not available');
+    }
+    
+    // Generate new session ID
+    var newSessionId = 'zs_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      sessionStorage.setItem(sessionKey, JSON.stringify({
+        id: newSessionId,
+        timestamp: Date.now()
+      }));
+    } catch (e) {
+      // Continue without session storage
+    }
+    
+    return newSessionId;
+  }
+  
+  var visitorId = getVisitorId();
+  var sessionId = getSessionId();
+  
+  // Track an event
+  function trackEvent(eventType, data) {
+    data = data || {};
+    
+    var eventData = {
+      website_id: config.websiteId,
+      event_type: eventType,
+      page_path: window.location.pathname,
+      referrer: document.referrer || 'direct',
+      visitor_id: visitorId,
+      session_id: sessionId,
+      metadata: data
+    };
+    
+    // Use sendBeacon if available (better for page unload events)
+    if (navigator.sendBeacon) {
+      var blob = new Blob([JSON.stringify(eventData)], { type: 'application/json' });
+      navigator.sendBeacon(config.apiUrl, blob);
+    } else {
+      // Fallback to fetch
+      fetch(config.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(eventData),
+        keepalive: true
+      }).catch(function(error) {
+        console.warn('Zappy Analytics: Failed to track event', error);
+      });
+    }
+  }
+  
+  // Track page view
+  if (config.trackPageViews) {
+    trackEvent('pageview', {
+      title: document.title,
+      url: window.location.href
+    });
+  }
+  
+  // Track clicks on important elements
+  if (config.trackClicks) {
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      
+      // Track button clicks (counted as actions)
+      if (target.tagName === 'BUTTON' || target.closest('button')) {
+        var button = target.tagName === 'BUTTON' ? target : target.closest('button');
+        trackEvent('click', {
+          element: 'button',
+          text: button.textContent.trim().substring(0, 100),
+          id: button.id || null,
+          class: button.className || null
+        });
+      }
+      
+      // Track link clicks (navigation - not counted as actions)
+      else if (target.tagName === 'A' || target.closest('a')) {
+        var link = target.tagName === 'A' ? target : target.closest('a');
+        trackEvent('navigation', {
+          element: 'link',
+          text: link.textContent.trim().substring(0, 100),
+          href: link.href,
+          external: link.hostname !== window.location.hostname
+        });
+      }
+    }, true);
+  }
+  
+  // Track form submissions
+  if (config.trackFormSubmissions) {
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      
+      trackEvent('form_submit', {
+        form_id: form.id || null,
+        form_name: form.name || null,
+        form_action: form.action || null,
+        form_method: form.method || 'GET'
+      });
+    }, true);
+  }
+  
+  // Track time on page (send on page unload)
+  var pageLoadTime = Date.now();
+  
+  window.addEventListener('beforeunload', function() {
+    var timeOnPage = Math.floor((Date.now() - pageLoadTime) / 1000); // in seconds
+    
+    trackEvent('page_unload', {
+      time_on_page: timeOnPage,
+      page_path: window.location.pathname
+    });
+  });
+  
+  // Expose tracking function globally for custom events
+  window.zappyAnalytics = {
+    track: trackEvent,
+    getVisitorId: function() { return visitorId; },
+    getSessionId: function() { return sessionId; }
+  };
+  
+})();
+</script>
+<!-- End Zappy Analytics -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Zappy Attribution Header -->
+<div id="zappy-attribution-header" class="zappy-header" style="display: none;">
+  <p>Happily created by&nbsp;<a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" class="zappy-link">Zappy</a></p>
+</div>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="nav-brand">
+        <a href="/" class="logo-link">
+          <img src="assets/healthcare-logo.webp" alt="ד״ר אביב גור" class="logo" />
+        </a>
+      </div>
+      
+      <button class="mobile-toggle" id="mobileToggle" aria-label="תפריט">
+        <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+        <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
+          <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+      </button>
+      
+      <button class="phone-header-btn" aria-label="התקשרו אלינו">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/services">שירותים</a></li>
+        <li><a href="/about">אודות</a></li>
+      </ul>
+      
+      <div class="nav-cta-container">
+        <li class="nav-cta-item">
+          <a href="/contact" class="nav-cta-btn">צור קשר</a>
+        </li>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>אודות ד״ר אביב גור</h1>
+      <h3>מומחה נוירולוגיה עם מחויבות למצוינות רפואית וגישה אישית לכל מטופל</h3>
+    </div>
+  </section>
+
+  <section class="about-intro">
+    <div class="container">
+      <div class="about-content">
+        <h2>מטפלים בראש עם כל הלב - הפילוסופיה שלנו</h2>
+        <p>ד״ר אביב גור הוא מומחה נוירולוגיה עם התמחות ייחודית בתחום הפרעות הקשב והריכוז (ADHD) והפרעות בספקטרום האוטיסטי. עם ניסיון רב שנים בתחום, ד״ר גור מביא גישה מקצועית ומסורה המשלבת ידע רפואי מתקדם עם הבנה עמוקה של הצרכים האנושיים והרגשיים של מטופליו. הפילוסופיה המנחה את המרפאה היא "מטפלים בראש עם כל הלב" - גישה המדגישה את החשיבות של טיפול מקצועי המשולב עם אמפתיה, הקשבה ומחויבות אמיתית לרווחת המטופל.</p>
+        <p>לאורך הקריירה המקצועית שלו, ד״ר גור טיפל במאות מטופלים עם ADHD ואוטיזם, מילדים צעירים ועד למבוגרים. הוא מתמחה בזיהוי וטיפול בכל types of adhd, כולל המקרים המורכבים של adhd and autism המופיעים יחד. ד״ר גור מאמין שכל מטופל הוא ייחודי וראוי לתוכנית טיפול מותאמת אישית המתחשבת לא רק בתסמינים הרפואיים אלא גם בהקשר המשפחתי, החברתי והתרבותי של המטופל.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="credentials">
+    <div class="container">
+      <h2>השכלה והכשרה מקצועית</h2>
+      <div class="credentials-grid">
+        <div class="credential-item">
+          <div class="credential-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3>השכלה אקדמית</h3>
+          <p>תואר ראשון ושני ברפואה מאוניברסיטה מובילה, עם התמחות בנוירולוגיה ונוירופסיכיאטריה התפתחותית.</p>
+        </div>
+        <div class="credential-item">
+          <div class="credential-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h3>התמחויות מתקדמות</h3>
+          <p>הכשרות מתקדמות באבחון וטיפול בADHD, אוטיזם והפרעות נוירו-התפתחותיות ממוסדות מובילים בארץ ובעולם.</p>
+        </div>
+        <div class="credential-item">
+          <div class="credential-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3>הסמכות והכרה</h3>
+          <p>רישיון מומחה נוירולוג מטעם משרד הבריאות, חבר בעמותות מקצועיות מובילות בתחום הנוירולוגיה והפסיכיאטריה.</p>
+        </div>
+        <div class="credential-item">
+          <div class="credential-icon">
+            <i class="fas fa-book-medical"></i>
+          </div>
+          <h3>מחקר ופיתוח</h3>
+          <p>מעורבות פעילה במחקר קליני, פרסומים בכתבי עת מקצועיים, והשתתפות בכנסים ובסדנאות מקצועיות בארץ ובחו"ל.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="approach">
+    <div class="container">
+      <h2>הגישה הטיפולית שלנו</h2>
+      <div class="approach-content">
+        <p>המרפאה של ד״ר אביב גור מתבססת על גישה הוליסטית ורב-תחומית לטיפול בהפרעות נוירו-התפתחותיות. אנו מאמינים שהצלחת הטיפול תלויה בהבנה מעמיקה של המטופל כאדם שלם, לא רק כמקבץ תסמינים רפואיים. לכן, תהליך האבחון והטיפול שלנו כולל הערכה מקיפה של ההיסטוריה הרפואית, ההתפתחותית והמשפחתית, בדיקה של רמת התפקוד בתחומי חיים שונים, והבנה של המטרות והציפיות של המטופל והמשפחה.</p>
+        <p>ד״ר גור משלב בטיפולו את השיטות המתקדמות והמבוססות מחקרית ביותר, כולל טיפול תרופתי מדויק, התערבויות התנהגותיות וקוגניטיביות, ייעוץ משפחתי, ושיתוף פעולה עם גורמים מקצועיים אחרים כמו פסיכולוגים, קלינאי תקשורת ומורים. הגישה שלנו מדגישה את החשיבות של מעורבות פעילה של המטופל והמשפחה בתהליך הטיפולי, והעצמה של המטופל לקחת אחריות על בריאותו ורווחתו.</p>
+        <p>אנו מקפידים על מעקב צמוד ומתמשך לאורך כל תהליך הטיפול, עם התאמות שוטפות של תוכנית הטיפול בהתאם להתקדמות ולצרכים המשתנים של המטופל. המטרה שלנו היא לא רק להפחית תסמינים אלא לשפר באופן משמעותי את איכות החיים, את התפקוד היומיומי, ואת תחושת הרווחה והביטחון העצמי של המטופל.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="values">
+    <div class="container">
+      <h2>הערכים המנחים אותנו</h2>
+      <div class="values-grid">
+        <div class="value-item">
+          <h3>מקצועיות ומצוינות</h3>
+          <p>ד״ר אביב גור מחויב למתן טיפול רפואי ברמה הגבוהה ביותר, תוך שימוש בשיטות האבחון והטיפול המתקדמות והמבוססות מחקרית ביותר. אנו משקיעים בהכשרה מתמדת ובעדכון ידע מקצועי כדי להבטיח שהמטופלים שלנו מקבלים את הטיפול הטוב ביותר האפשרי.</p>
+        </div>
+        <div class="value-item">
+          <h3>אמפתיה והקשבה</h3>
+          <p>אנו מאמינים שטיפול רפואי איכותי מתחיל בהקשבה אמיתית למטופל ולמשפחתו. ד״ר גור מקדיש זמן להבנת הצרכים, החששות והמטרות של כל מטופל, ובונה איתו קשר של אמון ושיתוף פעולה. אנו רואים במטופלים שותפים מלאים בתהליך הטיפולי.</p>
+        </div>
+        <div class="value-item">
+          <h3>גישה אישית ומותאמת</h3>
+          <p>כל מטופל הוא ייחודי, ולכן כל תוכנית טיפול צריכה להיות מותאמת אישית. אנו לא מאמינים בגישות "אחת מתאימה לכולם", אלא בטיפול המותאם לצרכים הספציפיים, לאישיות, ולנסיבות החיים של כל מטופל. זה נכון במיוחד כשמדובר בטיפול בsוגי ADHD שונים ובמקרים של adhd and autism.</p>
+        </div>
+        <div class="value-item">
+          <h3>שקיפות וכנות</h3>
+          <p>ד״ר גור מאמין בתקשורת פתוחה וכנה עם מטופליו. אנו מסבירים בבירור את תהליך האבחון, את אפשרויות הטיפול השונות, את היתרונות והחסרונות של כל אפשרות, ואת הציפיות הריאליות מהטיפול. מטופלינו תמיד מעורבים בקבלת ההחלטות הטיפוליות.</p>
+        </div>
+        <div class="value-item">
+          <h3>מחויבות לטווח ארוך</h3>
+          <p>טיפול בADHD ואוטיזם הוא לעיתים תהליך ארוך טווח הדורש התמדה וסבלנות. ד״ר אביב גור מחויב ללוות את מטופליו לאורך כל הדרך, לספק תמיכה מתמשכת, ולהיות זמין בעתות צורך. אנו בונים קשרים ארוכי טווח עם המטופלים והמשפחות שלהם.</p>
+        </div>
+        <div class="value-item">
+          <h3>חדשנות ושיפור מתמיד</h3>
+          <p>תחום הנוירולוגיה וטיפול בהפרעות נוירו-התפתחותיות מתפתח כל הזמן. אנו מחויבים להישאר בחזית הידע המקצועי, לאמץ שיטות טיפול חדשות ומוכחות, ולשפר ולהתאים את השירותים שלנו באופן מתמיד כדי לספק את הטיפול הטוב ביותר למטופלינו.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mission">
+    <div class="container">
+      <div class="mission-content">
+        <h2>המשימה שלנו</h2>
+        <p>המשימה של ד״ר אביב גור היא לספק טיפול נוירולוגי מקצועי ברמה הגבוהה ביותר לאנשים עם ADHD, אוטיזם והפרעות נוירו-התפתחותיות אחרות, תוך שמירה על כבוד האדם, אמפתיה וגישה אישית. אנו שואפים להיות המרפאה המובילה בתחום, לא רק בזכות המקצועיות והמומחיות שלנו, אלא גם בזכות האכפתיות, המסירות והמחויבות שלנו לרווחת מטופלינו.</p>
+        <p>אנו מאמינים שכל אדם עם ADHD או אוטיזם ראוי לחיות חיים מלאים ומספקים, להשיג את המטרות שלו, ולממש את הפוטנציאל שלו. המשימה שלנו היא לסייע למטופלים שלנו להתגבר על האתגרים שההפרעות הללו מציבות, לפתח כלים ואסטרטגיות להתמודדות יעילה, ולחזק את הביטחון העצמי והתחושה של שליטה בחיים שלהם. אנו רואים בכל הצלחה של מטופל שלנו - קטנה כגדולה - הצלחה שלנו.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>מוכנים להתחיל את המסע לשיפור איכות החיים?</h2>
+        <p>ד״ר אביב גור וצוות המרפאה ישמחו לענות על שאלותיכם ולסייע לכם במציאת הפתרון הטיפולי המתאים ביותר.</p>
+        <a href="/contact" class="btn-primary">צרו קשר עכשיו</a>
+      </div>
+    </div>
+  </section>
+
+  
+    <!-- Legal Footer -->
+    <footer class="legal-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="all-rights-reserved">
+            <p>© 2025 ד״ר אביב גור. כל הזכויות שמורות.</p>
+          </div>
+          <div class="footer-social"><a href="https://facebook.com/[facebook_handle]" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+<a href="https://instagram.com/[instagram_handle]" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="https://wa.me/[whatsapp_handle]" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
+          <div class="footer-legal">
+            <a href="privacy.html" aria-label="מדיניות פרטיות">
+              מדיניות פרטיות
+            </a>
+            <span class="separator">|</span>
+            <a href="accessibility.html" aria-label="נגישות">
+              נגישות
+            </a>
+            <span class="separator">|</span>
+            <a href="terms.html" aria-label="תנאי שימוש">
+              תנאי שימוש
+            </a>
+          </div>
+        </div>
+        <div class="zappy-attribution">
+          <p>נוצר באמצעות <a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Zappy</a></p>
+        </div>
+      </div>
+    </footer>
+
+  <a href="https://wa.me/[whatsapp_handle]" target="_blank" class="whatsapp-float" aria-label="WhatsApp" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+
+<!-- Zappy Attribution Header Script -->
+<script>
+(function() {
+  var websiteId = '31be5407-5b04-4f56-b8e2-a75069610c47';
+  
+  // Don't show header in preview mode
+  var currentUrl = window.location.href;
+  var isPreview = currentUrl.includes('/preview/') || 
+                  currentUrl.includes('/preview-fullscreen/') || 
+                  currentUrl.includes('localhost:5001') ||
+                  currentUrl.includes('localhost:3000');
+  
+  if (isPreview) {
+    return; // Exit early in preview mode
+  }
+  
+  fetch('https://api.zappy5.com/api/website/' + websiteId + '/tier')
+    .then(function(response) { return response.json(); })
+    .then(function(data) {
+      if (data.showAttribution) {
+        var header = document.getElementById('zappy-attribution-header');
+        if (header) {
+          header.style.display = 'block';
+        }
+      }
+    })
+    .catch(function(error) {
+      console.error('Failed to check tier:', error);
+    });
+})();
+</script>
+    <div data-integration="accessibility:toolbar"></div>
+    <script src="script.js"></script>
+</body></html>
